@@ -3,10 +3,8 @@ using StudentManagement.API.Model;
 
 namespace StudentManagement.API.Controllers
 {
-    [ApiVersion("1.0")] 
-    [ApiController]
-    [Route("api/v{version:ApiVersion}/[controller]")]
-    public class DepartmentController : Controller
+    
+    public class DepartmentController : MainApiController
     {
         [HttpGet]
         public IActionResult GetAll()
