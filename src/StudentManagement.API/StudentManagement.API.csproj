@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StudentManagement.BLL\StudentManagement.BLL.csproj" />
     <ProjectReference Include="..\StudentManagement.DLL\StudentManagement.DLL.csproj" />
   </ItemGroup>
 

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using StudentManagement.API.Model;
+using StudentManagement.BLL.Model;
 
 namespace StudentManagement.API.Controllers
 {

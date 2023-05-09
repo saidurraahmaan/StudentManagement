@@ -1,4 +1,4 @@
-﻿namespace StudentManagement.API.Model
+﻿namespace StudentManagement.BLL.Model
 {
     public class Student
     {

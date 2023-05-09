@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement.DLL", "src\StudentManagement.DLL\StudentManagement.DLL.csproj", "{0F7BD2E4-087B-43CD-93F0-23A92DA4F9A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentManagement.DLL", "src\StudentManagement.DLL\StudentManagement.DLL.csproj", "{0F7BD2E4-087B-43CD-93F0-23A92DA4F9A7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentManagement.API", "src\StudentManagement.API\StudentManagement.API.csproj", "{711C86A5-06AF-4BFE-A441-E6A25CFC1690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement.BLL", "src\StudentManagement.BLL\StudentManagement.BLL.csproj", "{611E9703-3825-4121-BC2D-9F11EACA2357}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{711C86A5-06AF-4BFE-A441-E6A25CFC1690}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{711C86A5-06AF-4BFE-A441-E6A25CFC1690}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{711C86A5-06AF-4BFE-A441-E6A25CFC1690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{611E9703-3825-4121-BC2D-9F11EACA2357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611E9703-3825-4121-BC2D-9F11EACA2357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611E9703-3825-4121-BC2D-9F11EACA2357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{611E9703-3825-4121-BC2D-9F11EACA2357}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
