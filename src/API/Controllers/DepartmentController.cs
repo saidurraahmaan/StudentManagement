@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using StudentManagement.API.Model;
 
 namespace StudentManagement.API.Controllers
 {
+    [ApiVersion("1.0")] 
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/v{version:ApiVersion}/[controller]")]
     public class DepartmentController : Controller
     {
         [HttpGet]
@@ -32,5 +34,34 @@ namespace StudentManagement.API.Controllers
         {
             return Ok("Insert new department");
         }
+    }
+    public static class DepartmentStatic
+    {
+        private static List<Department> AllDeparment { get; set; } = new List<Department>();
+
+        public static Department InsertDepartment(Department department)
+        {
+            AllDeparment.Add(department);
+            return department;
+        }
+
+        public static Department GetDepartment(string code) 
+        {
+            return AllDeparment.FirstOrDefault(x => x.Code == code);
+        }
+
+        public static Department UpdateDepartment(string code, Department department)
+        {
+            foreach (var item in AllDeparment)
+            {
+                if(code == item.Code)
+                {
+                    item.Name = department.Name;
+                }
+            }
+            return department;
+        }
+
+
     }
 }
